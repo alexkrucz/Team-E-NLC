@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="NLC service to analyze MBA applications">
+    <meta name="author" content="alex kruczkowski">
+    <title> Comm493 TeamE  |  Welcome</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/stylesheets/style.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
+  </head>
+  <body>
+    <header>
+      <div class="container">
+          <div id="branding">
+              <h1><span class="highlight">TeamE</span> NLC App</h1>
+          </div>
+          <nav>
+           <ul>
+               <li class="current"><a href="index.html">Home</a></li>
+               <li><a href="index.html">About</a></li>
+               <li><a href="index.html">Sign In</a></li>
+           </ul>
+          </nav>
+      </div>
+  </header>
+  <section id="showcase">
+      <div class="container">
+          <h1>TeamE NLC App</h1>
+          <p>Analyzing applications to the MBA program at Queen's University</p>
+      </div>
+  </section>
+  <section id="newsletter">
+      <div class="container">
+          <h1> Apps are classified as either: (1) Analytical, (2) Angry, (3) Tentative, (4) Joy, (5) Confident, (6) Sadness or (7) Fear. </h1>
+      </div>
+  </section>
+  <section id="inputform">
+    <div class="container">
+      <!-- Main Content Container -->
+        <div class="row" style=padding-top:75px;padding-left:27%;>
+          <!-- Using BS Grid System -->
+          <div class="col-md-8 ">
+            <!-- Display welcome Form to the user -->
+              <div class="form-group">
+                <label for="comment_query">Please enter your text below</label>
+                <textarea class="form-control" rows="10" cols="40" id="comment_query"></textarea>
+              </div>
+              <button id="analyze_text" class="btn btn-block btn-primary">Analyze</button>
+          </div>
+          <!--
+          <div id="instructions" class="col-md-4">
+            <h4>Instructions</h4>
+            <p>
+              This application uses the NLC service to categorize customer reviews as either: (1) Analytical, (2) Angry, (3) Tentative, (4) Joy, (5) Confident, (6) Sadness or (7) Fear.
+            </p>
+            <p>
+              Please enter an MBA application transcript into the box on the right and analyze. 
+            </p>
+          -->
+            <!--
+            <p>
+              <a href="#" class="btn btn-success btn-block random-comment">Random Review</a>
+            </p>
+          -->
+          </div>
+       
+          <!-- End of welcome message + submission form -->
+        </div>
+      </section>
+        <hr>
+        <div id="loader" class='container'>
+            <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+            </svg>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div id="result_text"></div>
+          </div>
+          <div class="col-md-4">
+            <!-- List of the Resulting Class Predictions -->
+            <ul id="results" class='list-group'></ul>
+          </div>
+        </div>
+
+      <!-- End of Main Content Container -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="static/js/main.js"></script>
+    <footer>
+      <p>TeamE NLC App, Copyright &copy; 2018</p>
+  </footer>
+  </body>
+
+</html>
